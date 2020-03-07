@@ -19,7 +19,7 @@
 
         global.addEventListener('storage', function(e) {
             if (e.storageArea !== global.localStorage) return;
-            if (e.newValue === null) return;
+            if (e.newValue == null || e.newValue === '') return;
             if (e.key.substring(0, id.length) !== id) return;
             var data = JSON.parse(e.newValue);
             $this._mc.port2.postMessage(data);
