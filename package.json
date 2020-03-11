@@ -1,6 +1,6 @@
 {
   "name": "broadcastchannel-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polyfill for BroadcastChannel for Safari, old Chrome and Opera",
   "main": "index.js",
   "scripts": {
